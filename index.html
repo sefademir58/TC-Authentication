@@ -14,9 +14,14 @@
     <div class = "container">    
     <form>
         <h1 id ="tittle">TC Kimlik Numarası Sorgulama Ekranı</h1>
-        <input name="tckimlikno" type="text" maxlength="11" id="inputText" placeholder="TC Kimlik Numarasını Giriniz">
-        <input type="submit" id="inquire" value="Sorgula">   
+        <input name="tckimlikno" type="text" id="inputText" placeholder="TC Kimlik Numarasını Giriniz">
+        <input type="button" id="inquire" value="Sorgula" onclick="">   
+        <div>
+            <p id="resultFalse" class="alert alert-danger" style="display: none"></p>
+            <p id="resultTrue" class="alert alert-success" style="display: none"></p>
+        </div>
     </form>
+    
 </div> 
        
 
