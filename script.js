@@ -1,12 +1,13 @@
-var inputText,inquire,resultFalse,resultTrue,odd=0,even=0,result,i,j,z,tcTotal=0;
+
+
+inquire.addEventListener('click', function(){
+  var  inputText,inquire,resultFalse,resultTrue,odd=0,even=0,result,i,j,z,tcTotal=0;
 
 
 inputText=document.querySelector("#inputText");
-inquire=document.querySelector("#inquire");
 resultFalse=document.querySelector("#resultFalse");
 resultTrue=document.querySelector("#resultTrue");
-
-inquire.addEventListener('click', function(){
+inquire=document.querySelector("#inquire");
   for(i=0;i<9;i+=2){
   odd+=Number (inputText.value[i]);
   }
@@ -22,7 +23,7 @@ inquire.addEventListener('click', function(){
   resultTrue.style.display="none";
   
   
-  if(inputText.value==""){
+  if(inputText.value.length <= 0){
     resultFalse.textContent="Lütfen 11 Haneli TC Kimlik Numarasını Giriniz."
   } else if(inputText.value.length !== 11){
     resultFalse.textContent="Kimlik Numarası 11 Haneli Yazılmalıdır.";
@@ -37,7 +38,8 @@ inquire.addEventListener('click', function(){
   }else{
     resultFalse.style.display="none";
     resultTrue.style.display="block";
-    resultTrue.textContent="Girmiş Olduğunuz Kimlik Numarası Doğrudur.";
+    resultTrue.textContent="Kimlik Numarası Doğru : "+inputText.value;
+    inputText.value = "";
   }
   
 }); 

@@ -6,17 +6,19 @@ body {
 }
 
 .container {
-    width: 100%;
+    width     : 100%;
     text-align:  center;
-    margin-top: 250px;
+    margin-top: 300px;
 }
 
 
 #tittle {
-    color: #473c8b;
+    color: #11af2b;
     text-align: center;
     font-size: 30px;
     font-family: sans-serif;
+    margin-top: 100px;
+    margin-right: 45px;
 }
 
 #inquire {
@@ -33,7 +35,7 @@ body {
 }
 
 #inputText{
-    width: 350px;
+    width: 370px;
     height: 37px;
     border: 1px solid #ff0000;
     outline: none;
@@ -45,18 +47,27 @@ body {
     font-family: sans-serif;
 }
 
-#resultFalse {
-    width: center;
-    color: #070707;
+#resultTrue {
+    color: #06720f;
     font-size: 18px;
-    background-color: rgb(114, 205, 218);
-    font-family: sans-serif;
+    background-color: rgb(125, 236, 190);
+    font-family: sans-serif; 
+    width: 330px;
+    height: 20px;
+    border: 1px solid #d786eb;
+    margin-top: 50px;
+    margin-left: 700px;
 }
 
-#resultTrue {
-    background-color: #ee0e0e;
-    width: center;
-    color: #92257b;
+#resultFalse {
+    background-color: #e08a8a;
+    color: #ac1e14;
     font-size: 18px;
     font-family: sans-serif;
+    padding: 5px;
+    width: 520px;
+    margin-top: 50px;
+    margin-left: 700px;
 }
+
+
