@@ -30,10 +30,7 @@ function idAuth() {
   } else if (inputText.value[0] == 0){
     alert.className = 'alert alert-danger';
     alert.textContent = "Kimlik Numarasının İlk Hanesi '0' Olamaz.";  
-  } else if (result % 10 != Number(inputText.value[9])){
-    alert.className = 'alert alert-danger';
-    alert.textContent = "Girmiş Olduğunuz Kimlik Numarası Geçersizdir.";
-  }else if (tcTotal % 10 != Number(inputText.value[10])){
+  } else if (result % 10 != Number(inputText.value[9]) || tcTotal % 10 != Number(inputText.value[10])){
     alert.className = 'alert alert-danger';
     alert.textContent = "Girmiş Olduğunuz Kimlik Numarası Geçersizdir.";
   } else {
